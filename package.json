@@ -1,0 +1,11 @@
+{
+  "name": "ld_action",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Andre Pato <anpato1994@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/github": "^5.1.1"
+  }
+}

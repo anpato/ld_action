@@ -1,0 +1,13 @@
+name: "Unused Feature Flags"
+description: "Checks for unused feature flags"
+inputs:
+  target_dir: # id of input
+    description: "Directory to scan"
+    required: true
+    default: "World"
+outputs:
+  flags: # id of output
+    description: "Flags unused"
+runs:
+  using: "node16"
+  main: "index.js"
