@@ -1,10 +1,10 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
-
+const fs = require('fs');
 try {
   const targetDir = core.getInput('target_dir');
-  console.log(targetDir);
-  core.setOutput('flags', []);
+  const files = fs.readdirSync(targetDir);
+  core.setOutput('flags', files);
   const payload = JSON.stringify(github.context.payload, undefined, 2);
   console.log(payload);
 } catch (error) {
